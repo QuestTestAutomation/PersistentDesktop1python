@@ -1,0 +1,14 @@
+{
+    "critical": "yes",
+    "doc": "",
+    "elapsedtime": 3060,
+    "endtime": "20180609 15:23:27.793",
+    "id": "s1-s1-s1-t2",
+    "longname": "Quest Support Portal Test Automation.Videos.Play Selected video.Play the selected video twice",
+    "message": "Teardown failed:\nSeveral failures occurred:\n\n1) Invalid test file. Test names differ. {u'status': u'FAIL', u'name': u'Play the selected video', u'tags': [u'1C278', u'video'], u'doc': u'', u'elapsedtime': 7061, u'critical': u'yes', u'starttime': u'20180609 15:23:17.666', u'longname': u'Quest Support Portal Test Automation.Videos.Play Selected video.Play the selected video', u'message': u\"Teardown failed:\\nSeveral failures occurred:\\n\\n1) Invalid test file. Test names differ. {u'status': u'PASS', u'name': u'Play the selected video twice', u'tags': [], u'doc': u'', u'elapsedtime': 3074, u'critical': u'yes', u'starttime': u'20180609 15:14:59.042', u'longname': u'Quest Support Portal Test Automation.Videos.Play Selected video.Play the selected video twice', u'message': u'', u'endtime': u'20180609 15:15:02.116', u'id': u's1-s1-s1-t1', u'template': u''}\\n\\n2) Resolving variable '${test_info.id}' failed: AttributeError: id\\n\\n3) Resolving variable '${test_info.tags}' failed: AttributeError: tags\", u'endtime': u'20180609 15:23:24.727', u'id': u's1-s1-s1-t1', u'template': u''}\n\n2) Resolving variable '${test_info.id}' failed: AttributeError: id\n\n3) Resolving variable '${test_info.tags}' failed: AttributeError: tags",
+    "name": "Play the selected video twice",
+    "starttime": "20180609 15:23:24.733",
+    "status": "FAIL",
+    "tags": [],
+    "template": ""
+}

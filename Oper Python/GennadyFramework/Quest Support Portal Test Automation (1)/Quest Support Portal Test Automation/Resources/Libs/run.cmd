@@ -1,0 +1,1 @@
+py -2.7 "C:\Users\gborodin\Source\Repos\Quest Support Portal Test Automation\Resources\Libs\createtestrun.py" -pr P1 -cf Chrome -cf "en" -pl Regression -tr NewRun-11 -us gtestbtest01@gmail.com -ul https://gtestbtest01.testrail.io -ak SwMh7YAiB7u4OB5RKVrY-Y8GPA7IatidpY3/EAjmZ

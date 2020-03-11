@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.0.4 (Python 3.6.5 on win32)" generated="20180910 20:18:47.023">
+<suite id="s1" name="Q2CAAT" source="C:\Users\gborodin\Source\Repos\Q2CAAT\Q2CAAT">
+<suite id="s1-s1" name="Tests" source="C:\Users\gborodin\Source\Repos\Q2CAAT\Q2CAAT\Tests">
+<suite id="s1-s1-s1" name="Switch SF App" source="C:\Users\gborodin\Source\Repos\Q2CAAT\Q2CAAT\Tests\Switch SF App">
+<suite id="s1-s1-s1-s1" name="Switch to Z-Force Quotes" source="C:\Users\gborodin\Source\Repos\Q2CAAT\Q2CAAT\Tests\Switch SF App\Switch to Z-Force Quotes.robot">
+<test id="s1-s1-s1-s1-t1" name="Switch to 'Z-Force Quotes'">
+<kw name="Login To SFDC sandbox as UAT account" library="Login To SFDC">
+<kw name="Set Selenium Timeout" library="Selenium2Library">
+<doc>Sets the timeout that is used by various keywords.</doc>
+<arguments>
+<arg>60</arg>
+</arguments>
+<status status="PASS" starttime="20180910 20:18:47.203" endtime="20180910 20:18:47.203"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>&amp;{SF_USER}[email]</arg>
+</arguments>
+<msg timestamp="20180910 20:18:47.204" level="INFO">gennady.borodin@quest.com.devpoc</msg>
+<status status="PASS" starttime="20180910 20:18:47.203" endtime="20180910 20:18:47.204"></status>
+</kw>
+<kw name="Open Test SFDC site using '${ENVIRONMENT}' environment" library="Login To SFDC">
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${env}'=='Local'</arg>
+<arg>Open Test SFDC Site On Local Environment</arg>
+</arguments>
+<kw name="Open Test SFDC Site On Local Environment" library="Login To SFDC">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>url=${BASE_URL}</arg>
+<arg>browser=${BROWSER}</arg>
+</arguments>
+<msg timestamp="20180910 20:18:47.206" level="INFO">Opening browser 'Chrome' to base url 'https://questsoftware--devpoc.lightning.force.com'.</msg>
+<status status="PASS" starttime="20180910 20:18:47.206" endtime="20180910 20:18:55.177"></status>
+</kw>
+<status status="PASS" starttime="20180910 20:18:47.205" endtime="20180910 20:18:55.178"></status>
+</kw>
+<status status="PASS" starttime="20180910 20:18:47.205" endtime="20180910 20:18:55.178"></status>
+</kw>
+<status status="PASS" starttime="20180910 20:18:47.205" endtime="20180910 20:18:55.178"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>id:Login</arg>
+</arguments>
+<status status="PASS" starttime="20180910 20:18:55.179" endtime="20180910 20:18:55.196"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id:username</arg>
+<arg>&amp;{SF_USER}[email]</arg>
+</arguments>
+<msg timestamp="20180910 20:18:55.197" level="INFO">Typing text 'gennady.borodin@quest.com.devpoc' into text field 'id:username'.</msg>
+<status status="PASS" starttime="20180910 20:18:55.197" endtime="20180910 20:18:55.316"></status>
+</kw>
+<kw name="Input Password" library="Selenium2Library">
+<doc>Types the given password into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id:password</arg>
+<arg>&amp;{SF_USER}[password]</arg>
+</arguments>
+<msg timestamp="20180910 20:18:55.317" level="INFO">Typing password into text field 'id:password'.</msg>
+<status status="PASS" starttime="20180910 20:18:55.316" endtime="20180910 20:18:55.392"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>id:Login</arg>
+</arguments>
+<msg timestamp="20180910 20:18:55.393" level="INFO">Clicking element 'id:Login'.</msg>
+<status status="PASS" starttime="20180910 20:18:55.392" endtime="20180910 20:18:57.811"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>//button[@data-aura-class="uiButton forceHeaderButton oneUserProfileCardTrigger"]</arg>
+</arguments>
+<status status="PASS" starttime="20180910 20:18:57.811" endtime="20180910 20:19:05.930"></status>
+</kw>
+<status status="PASS" starttime="20180910 20:18:47.202" endtime="20180910 20:19:05.930"></status>
+</kw>
+<kw name="Switch to 'Z-Force Quotes' App" library="Select Application">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>${select_app_button}</arg>
+</arguments>
+<status status="PASS" starttime="20180910 20:19:05.931" endtime="20180910 20:19:05.953"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>${select_app_button}</arg>
+</arguments>
+<msg timestamp="20180910 20:19:05.954" level="INFO">Clicking button '//div[@class="bBottom"]//nav//button'.</msg>
+<status status="PASS" starttime="20180910 20:19:05.953" endtime="20180910 20:19:06.059"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>${app_launcher_title}</arg>
+</arguments>
+<status status="PASS" starttime="20180910 20:19:06.060" endtime="20180910 20:19:06.679"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>//a[@class="appTileTitleNoDesc"][contains(.,'${app_name}')]</arg>
+</arguments>
+<status status="PASS" starttime="20180910 20:19:06.679" endtime="20180910 20:19:06.711"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//a[@class="appTileTitleNoDesc"][contains(.,'${app_name}')]</arg>
+</arguments>
+<msg timestamp="20180910 20:19:06.712" level="INFO">Clicking element '//a[@class="appTileTitleNoDesc"][contains(.,'Z-Force Quotes')]'.</msg>
+<status status="PASS" starttime="20180910 20:19:06.711" endtime="20180910 20:19:06.820"></status>
+</kw>
+<status status="PASS" starttime="20180910 20:19:05.930" endtime="20180910 20:19:06.821"></status>
+</kw>
+<kw name="Search and Open Account 'DELAWARE NATION'" library="Search SFDC Objects">
+<kw name="Select 'Accounts' View" library="Main Page Navigation">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>//div[@class="bBottom"]//ul[@class="slds-grid slds-has-flexi-truncate navUL"]//span[text()='${view-name}']</arg>
+</arguments>
+<status status="PASS" starttime="20180910 20:19:06.822" endtime="20180910 20:19:07.221"></status>
+</kw>
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided ``url``.</doc>
+<arguments>
+<arg>${BASE_URL}/lightning/o/Account/home</arg>
+</arguments>
+<msg timestamp="20180910 20:19:07.222" level="INFO">Opening url 'https://questsoftware--devpoc.lightning.force.com/lightning/o/Account/home'</msg>
+<status status="PASS" starttime="20180910 20:19:07.221" endtime="20180910 20:19:08.297"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20180910 20:19:09.298" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20180910 20:19:08.297" endtime="20180910 20:19:09.298"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>//div[@class="slds-spinner_container slds-grid slds-hide"]</arg>
+</arguments>
+<status status="PASS" starttime="20180910 20:19:09.298" endtime="20180910 20:19:09.954"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>//li[@class="navItem slds-context-bar__item slds-shrink-none slds-is-active"]//span[text()='${view-name}']</arg>
+</arguments>
+<status status="PASS" starttime="20180910 20:19:09.955" endtime="20180910 20:19:09.967"></status>
+</kw>
+<status status="PASS" starttime="20180910 20:19:06.821" endtime="20180910 20:19:09.967"></status>
+</kw>
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>${serach_control}</arg>
+</arguments>
+<msg timestamp="20180910 20:19:09.979" level="INFO">Current page contains element '//div[@class="slds-global-header__item slds-global-header__item--search"]'.</msg>
+<status status="PASS" starttime="20180910 20:19:09.967" endtime="20180910 20:19:09.980"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//input[@title="Search Accounts and more"]</arg>
+</arguments>
+<msg timestamp="20180910 20:19:09.980" level="INFO">Clicking element '//input[@title="Search Accounts and more"]'.</msg>
+<status status="PASS" starttime="20180910 20:19:09.980" endtime="20180910 20:19:10.083"></status>
+</kw>
+<kw name="Press Key" library="Selenium2Library">
+<doc>Simulates user pressing key on element identified by ``locator``.</doc>
+<arguments>
+<arg>//input[@title="Search Accounts and more"]</arg>
+<arg>${account_name}</arg>
+</arguments>
+<status status="PASS" starttime="20180910 20:19:10.083" endtime="20180910 20:19:10.448"></status>
+</kw>
+<kw name="Press Key" library="Selenium2Library">
+<doc>Simulates user pressing key on element identified by ``locator``.</doc>
+<arguments>
+<arg>//input[@title="Search Accounts and more"]</arg>
+<arg>\\13</arg>
+</arguments>
+<status status="PASS" starttime="20180910 20:19:10.449" endtime="20180910 20:19:10.577"></status>
+</kw>
+<status status="PASS" starttime="20180910 20:19:06.821" endtime="20180910 20:19:10.578"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>30</arg>
+</arguments>
+<msg timestamp="20180910 20:19:40.579" level="INFO">Slept 30 seconds</msg>
+<status status="PASS" starttime="20180910 20:19:10.578" endtime="20180910 20:19:40.579"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20180910 20:19:40.580" endtime="20180910 20:19:43.713"></status>
+</kw>
+<status status="PASS" starttime="20180910 20:18:47.201" endtime="20180910 20:19:43.713" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20180910 20:18:47.071" endtime="20180910 20:19:43.715"></status>
+</suite>
+<status status="PASS" starttime="20180910 20:18:47.069" endtime="20180910 20:19:43.718"></status>
+</suite>
+<status status="PASS" starttime="20180910 20:18:47.067" endtime="20180910 20:19:43.720"></status>
+</suite>
+<status status="PASS" starttime="20180910 20:18:47.048" endtime="20180910 20:19:43.722"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Q2CAAT">Q2CAAT</stat>
+<stat pass="1" fail="0" id="s1-s1" name="Tests">Q2CAAT.Tests</stat>
+<stat pass="1" fail="0" id="s1-s1-s1" name="Switch SF App">Q2CAAT.Tests.Switch SF App</stat>
+<stat pass="1" fail="0" id="s1-s1-s1-s1" name="Switch to Z-Force Quotes">Q2CAAT.Tests.Switch SF App.Switch to Z-Force Quotes</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
