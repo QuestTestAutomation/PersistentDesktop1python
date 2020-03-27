@@ -3,12 +3,12 @@ from ITAFRepo.Dev.Utilities import Utillib
 from ITAFRepo.Dev.Excel import XLLib
 
 #ResultsFile = "C:/Results/Consolidated Patch Testing Results 16Nov2019.xlsx"
-ResultsFile = "C:/Results/Siebel Service Regression Testing Results 10Mar2020.xlsx"
+ResultsFile = "C:/Results/Siebel Service Regression Testing Results 27Mar2020.xlsx"
 TestRailURL = 'https://tr.labs.quest.com/testrail/'
 TestRailUser = 'seshikanth.anumolu@quest.com'
-TestRailPassword = 'P@ssw0rd@33'
+TestRailPassword = 'G01deneye@1234'
 project_name = "Siebel"
-run_name = "SiebelRegressionTest11Mar2020"
+run_name = "SiebelRegressionTest26Mar2020"
 
 #project_name = "Siebel"
 #run_name = "SiebelRegression12Dec2019"
@@ -43,6 +43,12 @@ for i in range(2,len(tabledictinoary)):
         print(status)
         if status.upper() == 'PASS':
             statusID = 1
+        elif status.upper() == 'BLOCKED':
+            statusID = 2
+        elif status.upper() == 'UNTESTED':
+            statusID = 3
+        elif status.upper() == 'RETEST':
+            statusID = 4
         else:
             statusID = 5
 
